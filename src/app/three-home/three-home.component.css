@@ -1,0 +1,36 @@
+section{
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    padding: 300px 0px 0px 0px;;
+}
+
+h2{
+    font-size: 40px;
+    font-weight: 800;
+    font-family: 'Nunito', sans-serif;
+    color: #16334e;
+    margin-bottom: 40px;
+}
+
+p{
+    font-size: 20px;
+    font-weight: 200;
+    font-family: 'Nunito', sans-serif;
+    color: #505050;
+}
+
+
+img{max-width: 300px;margin:0 auto; display: block; }
+
+
+
+
+
+@media(min-width:992px){
+
+    img{position: relative; top: -160px;}
+}
+
+@media(max-width:991px){
+
+    img{top:0;margin-top:60px;}
+}
