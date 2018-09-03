@@ -10,3 +10,9 @@ if (environment.production) {
 
 platformBrowserDynamic().bootstrapModule(AppModule)
   .catch(err => console.log(err));
+
+
+function open(){
+    var x = document.querySelector(".modal");
+    x.classList.remove('hide') 
+  }

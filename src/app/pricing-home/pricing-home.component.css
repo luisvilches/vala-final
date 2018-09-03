@@ -81,3 +81,8 @@ p{
     background:#fff;
     color:#0083ff;
 }
+
+
+@media (max-width:768px){
+    .divider{height: 300px;}
+}

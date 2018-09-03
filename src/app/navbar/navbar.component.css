@@ -1,0 +1,118 @@
+nav{position: fixed;
+    top:0;z-index: 999999999;padding: 10px 0;width: 100%;background: url('../../assets/banner-bg.jpg');background-size: cover;}
+nav ul {
+    padding:20px;
+    width: 100%;
+}
+nav ul li{
+    display: inline-block;
+    margin: 0 15px;
+}
+nav ul li a{
+    color:#fff;
+    font-family: "Nunito", sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+a{text-decoration: none;}
+nav .logo{margin-top: 10px;}
+
+.grid-button{display: none;}
+
+@media (max-width:991px){
+    nav .list{display: none;}
+    nav {background: #fff;border-bottom: 2px solid #0083FF}
+    nav .logo{color: #0083FF;}
+    .grid-button{display: block;}
+}
+
+.grid-button {
+    background: none;
+    border: none;
+    display: table-cell;
+    padding: 0px;
+    vertical-align: middle;
+    text-align: center;
+    position: fixed;
+    right: 30px;
+    top: 30px;
+    z-index: 999999999999;
+}
+
+.grid {
+    background-color: #0083FF;
+    color: #0083FF;
+    display: inline-block;
+    height: 10px;
+    width:10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.grid.open {
+    box-shadow: -12px -12px, 0px -12px, 12px -12px, -12px 0px, 12px 0px, -12px 12px, 0px 12px, 12px 12px;
+}
+
+.grid.close {
+    box-shadow: -9px 0px, -17px 0px, 0px -9px, 0px 17px, 0px -17px, 0px 9px, 17px 0px, 9px 0px;
+    transform: rotate(45deg) scale(0.75);
+    background-color: #fff;
+    color: #fff;
+}
+
+.hideMenu{display: none!important;}
+
+.menuMobile{
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    background: url('../../assets/banner-bg.jpg');
+    background-size: cover;
+    display: block!important;
+    z-index: 999;
+    padding: 100px 0!important;
+}
+
+.menuMobile * {color:#fff;}
+
+.menuMobile li{
+    display: block!important;
+    margin-bottom: 40px!important;
+    text-align: left!important;
+
+}
+
+
+.menuMobile li a{
+    font-size: 24px!important;
+    font-family: 'Comfortaa', cursive!important;
+
+}
+
+
+.btn{
+    border-radius: 3px;
+    padding: 9px 30px;
+    font-family: "Nunito", sans-serif;
+    font-size: 20px;
+    color:#fff;
+    border:none;
+    font-weight: 700;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    outline: none;
+}
+
+.btn-border{
+    border:2px solid #fff;
+    border-radius: 5px;
+}
+
+.btn-border:hover{
+    background: #fff;
+    color: #0083FF!important;
+    cursor: pointer;
+}

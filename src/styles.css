@@ -35,11 +35,15 @@ h5 {font-size: .83em;}
 h6 {font-size: .75em;}
 
 router-outlet ~ * {
-    position: absolute;
+    position: relative;
     height: 100%;
     width: 100%;
     padding:0;
     margin:0;
+} 
+
+router-outlet{
+    position: relative!important;
 }
 
 [class^=cell]{float: left; width: 100%; min-height: 1px;position: relative;}
@@ -269,3 +273,7 @@ router-outlet ~ * {
 .block{display: block;}
 .inline-block{display: inline-block;}
 .inline{display: inline;}
+
+.logo{font-family: 'Comfortaa', cursive;font-size: 40px;color:#fff;text-align: left;}
+.logo span{font-size: 30px;}
+

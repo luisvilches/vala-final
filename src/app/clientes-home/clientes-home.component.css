@@ -28,5 +28,5 @@ p{
     font-family: 'Nunito', sans-serif;
     font-weight: 400;
 }
-img{max-width: 200px;max-height: 63px;}
+img{max-width: 200px;max-height: 63px;margin: 0 auto;}
 .images{padding:15px;}

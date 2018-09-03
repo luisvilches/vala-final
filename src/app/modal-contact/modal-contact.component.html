@@ -1,0 +1,41 @@
+
+<div class="modal container-lg hide">
+  <i class="fa fa-close close" (click)="close()"></i>
+  <div class="line">
+    <div class="cell-12 text-center">
+      <h4>Formularo de contacto</h4>
+    </div>
+  </div>
+  <div class="form">
+    <div class="line">
+      <div class="cell-12">
+        <input type="text" id="" placeholder="Nombre" class="form-control" [(ngModel)]="name">
+      </div>
+      <div class="cell-12">
+        <input type="email" id="" placeholder="Correo eléctronico" class="form-control" [(ngModel)]="mail">
+      </div>
+      <div class="cell-12">
+        <input type="text" id="" placeholder="Teléfono" class="form-control" [(ngModel)]="tel">
+      </div>
+    </div>
+    <div class="line">
+      <div class="cell-12">
+        <textarea  id="" cols="30" rows="10" placeholder="Mensaje" class="form-control" [(ngModel)]="message"></textarea>
+      </div>
+    </div>
+    <div class="line">
+      <div class="cell-12">
+        <br>
+        <div class="alert alert-danger hide" role="alert">
+          Debes completar todos los datos
+        </div>
+      </div>
+    </div>
+  
+    <div class="line">
+      <div class="cell-12">
+        <button class="btn btn-primary" (click)="send()">Enviar</button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -60,3 +60,8 @@ p{
 .card:hover p,.card:hover h3,.card:hover i{
     color:#fff;
 }
+
+
+@media (max-width:768px){
+    .divider{height: 300px;}
+}

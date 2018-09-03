@@ -7,6 +7,6 @@ import { fadeAnimation } from './animations'
   styleUrls: ['./app.component.css'],
   animations: [fadeAnimation]
 })
-export class AppComponent {
-  title = 'valacl';
+export class AppComponent  {
+  title = 'ValaDigital';
 }

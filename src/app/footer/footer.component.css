@@ -1,9 +1,62 @@
-p{color: #fff;}
 footer{
-    background:#222;
-    position: absolute;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    bottom:0;
+    background: url(../../assets/footer.jpg);
+    height: 460px;;
+}
+
+.pdLogo{padding: 40px 0;}
+
+.rrss li {list-style: none;display: inline-block; margin: 0 20px;}
+.rrss li a{color: #fff;font-size: 30px;text-decoration: none;outline: 0;}
+.rrss li a:hover{color:#0083ff}
+.linea{border-bottom: 1px solid rgba(255, 255, 255, 0.08);margin-bottom: 60px;}
+
+ul{padding: 0 20px}
+ul h2{
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Nunito", sans-serif;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+ul li {
+    color: rgba(255, 255, 255, 0.6);
+    font-family: "Nunito", sans-serif;
+    margin-bottom: 20px;
+}
+
+ul li td:nth-child(1){padding-right: 5px;}
+
+@media (max-width:768px){
+    .pdLogo{padding: 20px 0;}
+    .pdLogo *{text-align: center!important;}
+    .rrss li{margin: 0px 8px!important;}
+    footer{height: 720px;}
+}
+
+
+.btn-primary{background: #0083ff;}
+
+
+.btn{
+    border-radius: 3px;
+    padding: 9px 30px;
+    font-family: "Nunito", sans-serif;
+    font-size: 20px;
+    color:#fff;
+    border:none;
+    font-weight: 700;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    outline: none;
+}
+
+input{
+    height: 50px;
+    border-radius: 3px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: #fff;
+    font-size: 20px;
+    padding: 0 20px;
+    color: #0D2352;
+    font-family: "Nunito", sans-serif;
 }

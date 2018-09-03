@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { routes } from './app.routes'
+import {ScrollToModule} from 'ng2-scroll-to';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -12,6 +14,11 @@ import { PortfolioHomeComponent } from './portfolio-home/portfolio-home.componen
 import { PricingHomeComponent } from './pricing-home/pricing-home.component';
 import { ClientesHomeComponent } from './clientes-home/clientes-home.component';
 import { FooterComponent } from './footer/footer.component';
+import { PostFooterComponent } from './post-footer/post-footer.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { ModalContactComponent } from './modal-contact/modal-contact.component';
+import { MailService } from './mail.service';
+import { HttpClientModule } from '@angular/common/http'; 
 
 @NgModule({
   declarations: [
@@ -24,14 +31,20 @@ import { FooterComponent } from './footer/footer.component';
     PortfolioHomeComponent,
     PricingHomeComponent,
     ClientesHomeComponent,
-    FooterComponent
+    FooterComponent,
+    PostFooterComponent,
+    NavbarComponent,
+    ModalContactComponent
   ],
   imports: [
     BrowserModule,
     routes,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    ScrollToModule.forRoot(),
+    HttpClientModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [MailService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

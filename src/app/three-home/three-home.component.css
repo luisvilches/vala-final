@@ -11,11 +11,16 @@ h2{
     margin-bottom: 40px;
 }
 
-p{
+p,li{
     font-size: 20px;
     font-weight: 200;
     font-family: 'Nunito', sans-serif;
     color: #505050;
+}
+
+li{
+    margin-bottom: 20px;
+    list-style: circle;
 }
 
 
@@ -33,4 +38,8 @@ img{max-width: 300px;margin:0 auto; display: block; }
 @media(max-width:991px){
 
     img{top:0;margin-top:60px;}
+}
+
+@media (max-width:768px){
+    section{padding: 150px 0px 0px 0px}
 }

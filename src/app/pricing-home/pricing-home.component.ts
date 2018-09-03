@@ -12,4 +12,8 @@ export class PricingHomeComponent implements OnInit {
   ngOnInit() {
   }
 
+  open(){
+    var x = document.querySelector(".modal");
+    x.classList.remove('hide') 
+  }
 }
