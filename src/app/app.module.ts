@@ -18,7 +18,8 @@ import { PostFooterComponent } from './post-footer/post-footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ModalContactComponent } from './modal-contact/modal-contact.component';
 import { MailService } from './mail.service';
-import { HttpClientModule } from '@angular/common/http'; 
+import { HttpClientModule } from '@angular/common/http';
+import { NotFountComponent } from './not-fount/not-fount.component'; 
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { HttpClientModule } from '@angular/common/http';
     FooterComponent,
     PostFooterComponent,
     NavbarComponent,
-    ModalContactComponent
+    ModalContactComponent,
+    NotFountComponent
   ],
   imports: [
     BrowserModule,
