@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { MailService } from '../mail.service';
+import { ContactFormService } from '../contact-form.service';
+import { ContactForm } from '../contact-form';
+import Swal from 'sweetalert2'
+
 
 @Component({
   selector: 'app-modal-contact',
@@ -11,20 +14,11 @@ export class ModalContactComponent implements OnInit {
   name:string;
   tel:string;
   message:string;
-  body:any = {
-    name:this.name,
-    mail:this.mail,
-    tel:this.tel,
-    message:this.message
-  }
+  asunto:string;
+  body:ContactForm;
 
-  constructor(public mailService:MailService) { 
-
-  }
-
-  ngOnInit() {
-    
-  }
+  constructor(public mailService:ContactFormService) {}
+  ngOnInit() {}
 
   close(){
     var x = document.querySelector(".modal");
@@ -68,17 +62,30 @@ export class ModalContactComponent implements OnInit {
       return false;
     }
 
-    this.sendMail();
+    this.sendMails();
+  }
+
+  addFormatTel(){
+    this.tel = "+569";
   }
 
 
-  sendMail(){
-    this.mailService.getResponseEmail(this.body).subscribe(data => {
-      console.log(data);
-      //var modal = document.querySelector(".modal");
-      this.alerta(true);
-    })
+  sendMails(){
+    this.body = {
+      name:this.name,
+      mail:this.mail,
+      telefono:this.tel,
+      mensaje:this.message,
+      asunto:this.asunto,
+      message:null
+    }
 
+    this.mailService.sendMail(this.body).subscribe(response => {
+      this.close();
+      if(response.message == "Email Send"){
+        Swal("Formulario de contacto", "Mensaje enviado correctamente", 'success');
+      }
+    })
   }
 
 }

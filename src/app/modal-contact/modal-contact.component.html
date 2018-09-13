@@ -15,7 +15,10 @@
         <input type="email" id="" placeholder="Correo eléctronico" class="form-control" [(ngModel)]="mail">
       </div>
       <div class="cell-12">
-        <input type="text" id="" placeholder="Teléfono" class="form-control" [(ngModel)]="tel">
+        <input type="text" id="" placeholder="Teléfono" class="form-control" [(ngModel)]="tel" (click)="addFormatTel()">
+      </div>
+      <div class="cell-12">
+        <input type="text" id="" placeholder="Asunto" class="form-control" [(ngModel)]="asunto">
       </div>
     </div>
     <div class="line">
@@ -34,7 +37,7 @@
   
     <div class="line">
       <div class="cell-12">
-        <button class="btn btn-primary" (click)="send()">Enviar</button>
+        <button class="btn btn-primary btn-send" (click)="send()">Enviar</button>
       </div>
     </div>
   </div>

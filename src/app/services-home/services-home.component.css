@@ -49,6 +49,7 @@ p{
     border-radius: 10px;
     /*box-shadow: 3px 3px 20px 2px #eee;*/
     border: 1px solid #eee;
+    margin: 5px;
 }
 
 .card:hover{

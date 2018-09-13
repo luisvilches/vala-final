@@ -3,6 +3,7 @@ footer{
     height: 460px;;
 }
 
+
 .pdLogo{padding: 40px 0;}
 
 .rrss li {list-style: none;display: inline-block; margin: 0 20px;}
@@ -24,13 +25,19 @@ ul li {
     margin-bottom: 20px;
 }
 
+.lilines {padding: 0;}
+.lilines li{display: inline-block; margin-right: 60px;}
+li a{
+    color: #fff;
+    text-decoration: none;
+}
 ul li td:nth-child(1){padding-right: 5px;}
 
 @media (max-width:768px){
     .pdLogo{padding: 20px 0;}
     .pdLogo *{text-align: center!important;}
     .rrss li{margin: 0px 8px!important;}
-    footer{height: 720px;}
+    footer{height: 580px;}
 }
 
 

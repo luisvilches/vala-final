@@ -36,6 +36,8 @@ img{
 
 .images{padding:5px;}
 
+.images img{margin:0 auto;display: block;}
+
 
 figure.snip1321 {
     font-family: 'Raleway', Arial, sans-serif;
@@ -43,8 +45,8 @@ figure.snip1321 {
     float: left;
     overflow: hidden;
     margin: 10px 1%;
-    min-width: 230px;
-    max-width: 315px;
+    /*min-width: 230px;
+    max-width: 315px;*/
     width: 100%;
     color: #000000;
     text-align: center;
@@ -93,10 +95,10 @@ figure.snip1321 {
     position: absolute;
     content: "";
     display: block;
-    top: 20px;
-    left: 20px;
-    right: 20px;
-    bottom: 20px;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
     -webkit-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
     -webkit-transform: rotateX(-90deg);

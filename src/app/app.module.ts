@@ -17,7 +17,6 @@ import { FooterComponent } from './footer/footer.component';
 import { PostFooterComponent } from './post-footer/post-footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ModalContactComponent } from './modal-contact/modal-contact.component';
-import { MailService } from './mail.service';
 import { HttpClientModule } from '@angular/common/http';
 import { NotFountComponent } from './not-fount/not-fount.component'; 
 
@@ -46,7 +45,8 @@ import { NotFountComponent } from './not-fount/not-fount.component';
     HttpClientModule,
     FormsModule
   ],
-  providers: [MailService],
+  providers: [
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
